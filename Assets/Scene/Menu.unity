@@ -151,7 +151,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Wolf Escape
+  m_Text: Cursed
 --- !u!222 &69550976
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1299,8 +1299,8 @@ MonoBehaviour:
   m_Text: "Controls: arrow keys or w,a,s,d keys\nImportant Information: To Talk to
     villagers and signs, \nor to pick up an item simply run into them. To drop an
     object you are \ncarring, press the f key.\n\nStory:\nYou have been infected with
-    lycropanthy and need to cure yourself\nbefore you turn into a werewolf. You need
-    to be fast because time is\nagainst you. You should seek out you trusted friend
+    lycanthropy and need to cure yourself\nbefore you turn into a werewolf. You need
+    to be fast because time is\nagainst you. You should seek out your trusted friend
     the BarTender."
 --- !u!222 &1475258467
 CanvasRenderer:

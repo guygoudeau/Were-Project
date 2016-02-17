@@ -40,6 +40,9 @@ public class Menu : MonoBehaviour
     public void LoadOn()
     {
         SceneManager.LoadScene(level);
-        GameObject.Find("InformationHolder(Clone)").GetComponent<InfoHandler>().timer = 0;
+        if (GameObject.Find("InformationHolder(Clone)") != null)
+        {
+            GameObject.Find("InformationHolder(Clone)").GetComponent<InfoHandler>().timer = 0;
+        } 
     }
 }

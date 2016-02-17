@@ -8263,6 +8263,35 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 508536a4e8b4bf74cae945c96f805d55, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &560292397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 101936, guid: 39f6e4d238c0b9b4e8f96d69ef9d8cf0, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 560292398}
+  m_Layer: 0
+  m_Name: Villager (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &560292398
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 492142, guid: 39f6e4d238c0b9b4e8f96d69ef9d8cf0, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 560292397}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.56, y: 1.85, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1285832466}
+  - {fileID: 746337323}
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
 --- !u!4 &561258136 stripped
 Transform:
   m_PrefabParentObject: {fileID: 471408, guid: 508536a4e8b4bf74cae945c96f805d55, type: 2}
@@ -10707,6 +10736,33 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a102679d200678a488546420fb886098, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &746337322
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 137594, guid: 39f6e4d238c0b9b4e8f96d69ef9d8cf0, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 746337323}
+  m_Layer: 0
+  m_Name: PatrolPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &746337323
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 425736, guid: 39f6e4d238c0b9b4e8f96d69ef9d8cf0, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 746337322}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 560292398}
+  m_RootOrder: 1
 --- !u!1001 &746842108
 Prefab:
   m_ObjectHideFlags: 0
@@ -18833,6 +18889,101 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6c8a70f7bd7bc374ca4e655435d242b7, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1285832465
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 152262, guid: 39f6e4d238c0b9b4e8f96d69ef9d8cf0, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1285832466}
+  - 212: {fileID: 1285832469}
+  - 61: {fileID: 1285832468}
+  - 114: {fileID: 1285832467}
+  m_Layer: 0
+  m_Name: Villager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1285832466
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 457062, guid: 39f6e4d238c0b9b4e8f96d69ef9d8cf0, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1285832465}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: -0.02, z: 0}
+  m_LocalScale: {x: 0.20289236, y: 0.20289236, z: 0.20289236}
+  m_Children: []
+  m_Father: {fileID: 560292398}
+  m_RootOrder: 0
+--- !u!114 &1285832467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11427530, guid: 39f6e4d238c0b9b4e8f96d69ef9d8cf0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1285832465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9166d717d25eea4aa4a9a8c7b602d29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patrolPoints:
+  - {fileID: 746337323}
+  speed: 2
+  moveRate: 4
+  villagerText: {fileID: 1837592552}
+  villSay: 'You: My God. Did I do this? I need to find the Bartender.'
+  speach: 0
+--- !u!61 &1285832468
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6137268, guid: 39f6e4d238c0b9b4e8f96d69ef9d8cf0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1285832465}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 0.8, y: 1.6}
+--- !u!212 &1285832469
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 21297210, guid: 39f6e4d238c0b9b4e8f96d69ef9d8cf0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1285832465}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1761112153
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b4378d747c8e301469094d2e2b0a02ad, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1001 &1286964751
 Prefab:
   m_ObjectHideFlags: 0

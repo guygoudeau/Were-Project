@@ -4,31 +4,30 @@ using UnityEngine.UI;
 
 public class NPCMovement : MonoBehaviour {
 
-    public Transform[] patrolPoints;
-    public float speed;
-    public float moveRate;
-    public Text villagerText;
-    public string villSay;
+    public Transform[] patrolPoints;//The NPC's Patrol points
+    public float speed;             //NPC's speed
+    public float moveRate;          //How long the stop before each move
+    public Text villagerText;       //The text space the villager will fill
+    public string villSay;          //What the villager will fill in in the space
 
-    private int currentPoint;
-    private bool moving = true;
-    private float nextMove;
-    public bool speach = false;
+    private int currentPoint;       //Current point the NPC is on
+    private bool moving = true;     //Are they moving?
+    private float nextMove;         //When the NPC will move next
+    public bool speach = false;     //Are they speaking.
 
-    // Use this for initialization
+
     void Start()
     {
-        transform.position = patrolPoints[0].position;
         currentPoint = 0;
         villagerText.text = "";
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        if(moving == true)
+        if(moving == true && patrolPoints[currentPoint] != null)
         {
-            if (transform.position == patrolPoints[currentPoint].position)
+            if (gameObject.transform.position == patrolPoints[currentPoint].transform.position)
              {
                 currentPoint++;
                 moving = false;

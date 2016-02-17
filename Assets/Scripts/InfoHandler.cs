@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class InfoHandler : MonoBehaviour {
 
-    [HideInInspector] public bool[] req = { false, false, false };
+    public bool[] req = { false, false, false };
     public float timer;
     public float currentTime;
     public float maxTime;

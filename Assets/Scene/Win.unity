@@ -640,8 +640,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   patrolPoints:
   - {fileID: 116272171}
-  - {fileID: 0}
-  - {fileID: 0}
   speed: 2
   moveRate: 3
   villagerText: {fileID: 31200779}
@@ -980,8 +978,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   patrolPoints:
   - {fileID: 1882018223}
-  - {fileID: 0}
-  - {fileID: 0}
   speed: 2
   moveRate: 3
   villagerText: {fileID: 31200779}
@@ -1823,7 +1819,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 336280114}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.56, y: 2.31, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 889656412}
@@ -1842,8 +1838,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   patrolPoints:
   - {fileID: 762703694}
-  - {fileID: 0}
-  - {fileID: 0}
   speed: 2
   moveRate: 5
   villagerText: {fileID: 31200779}
@@ -3480,7 +3474,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 889656411}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.79, y: 7.4, z: 0}
+  m_LocalPosition: {x: 6.07, y: 9.99, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 336280115}
@@ -6351,8 +6345,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   patrolPoints:
   - {fileID: 1899292803}
-  - {fileID: 0}
-  - {fileID: 0}
   speed: 2
   moveRate: 3
   villagerText: {fileID: 31200779}
@@ -6825,6 +6817,56 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1cad7bfe0321ae64ba76db0c6c45259e, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &1935461250
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 461090, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -3.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 461090, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 10.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 461090, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 461090, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 461090, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 461090, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 461090, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 461090, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 11459998, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
+      propertyPath: villagerText
+      value: 
+      objectReference: {fileID: 31200779}
+    - target: {fileID: 11459998, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
+      propertyPath: villSay
+      value: Hit the red ball 4 times to go back to the menu.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1944847982 stripped
 Transform:

@@ -3083,7 +3083,9 @@ MonoBehaviour:
   speed: 2
   moveRate: 5
   villagerText: {fileID: 1670991106}
-  villSay: 
+  villSay: 'Hey, can you help me get my stuff across? I''ll pay you but all I have
+    left is garlic. Just bring the items across and remeber this: don''t leave the
+    fox and goose alone or the goose and the beans alone.'
   speach: 0
 --- !u!50 &970013849
 Rigidbody2D:

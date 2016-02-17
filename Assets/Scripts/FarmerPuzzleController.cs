@@ -11,6 +11,7 @@ public class FarmerPuzzleController : MonoBehaviour {
     public bool goose;
     public bool playerSide = false;
     public GameObject garlic;
+    private bool gar;
 
 	void Update () {
 
@@ -21,7 +22,7 @@ public class FarmerPuzzleController : MonoBehaviour {
         
         if(bag == true && goose == true && fox == true)
         {
-            garlic.SetActive(true);
+            gar = true;
         }    
 
         if (fox == goose && bag != fox && playerSide != fox)
@@ -40,6 +41,18 @@ public class FarmerPuzzleController : MonoBehaviour {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             } 
         }
-       
+
+        if (GameObject.Find("InformationHolder(Clone)").GetComponent<InfoHandler>().req[1] == true)
+        {
+            gar = false;
+        }
+
+        if(gar == true)
+        {
+            garlic.SetActive(true);
+        }
+
+        
+
     }
 }

@@ -2677,6 +2677,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11459998, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
+      propertyPath: patrolPoints.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 461090, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
       propertyPath: m_LocalPosition.x
       value: 20.67128
@@ -2713,9 +2717,29 @@ Prefab:
       propertyPath: villagerText
       value: 
       objectReference: {fileID: 1961224012}
+    - target: {fileID: 436052, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 419206, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11459998, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11459998, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
+      propertyPath: patrolPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 1230444097}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &1230444097 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 436052, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
+  m_PrefabInternal: {fileID: 1230444096}
 --- !u!1001 &1230879545
 Prefab:
   m_ObjectHideFlags: 0
@@ -5607,7 +5631,7 @@ MonoBehaviour:
   moveRate: 13
   villagerText: {fileID: 1961224012}
   villSay: You, you have been cursed. Madam Lovely can cure you, but she needs items.
-    She needs Garlic, Quartz, and Dragon's Blood. Go, beyond the villages for these
+    She needs Garlic, Quartz, and Dragon's Blood. Go, beyond the village for these
     items.
   speach: 0
 --- !u!50 &2090383541

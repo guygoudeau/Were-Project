@@ -5,27 +5,35 @@ public class Snap : MonoBehaviour {
 
     public GameObject follow;//Player or object the camera is following.
 
+    GameObject player; 
+    GameObject crossingPoint; 
+
     [HideInInspector]
     public bool follower;
-    private bool snap;
     [HideInInspector]
     public bool side;
+
+    void Start()
+    {
+       player = GameObject.Find("Player").gameObject;
+       crossingPoint = GameObject.Find("CrossingPoint").gameObject;
+    }
 
 	void Update () {
 
         if(follower == true)
         {
-            GameObject.Find("Player").GetComponent<PlayerMovement>().holding = true;
-            gameObject.transform.position = GameObject.Find("Player").transform.position; //Sets object's position to player's.
+            player.GetComponent<PlayerMovement>().holding = true;
+            gameObject.transform.position = player.transform.position; //Sets object's position to player's.
         }        
 
         if(Input.GetKeyDown(KeyCode.F))
         {
-            GameObject.Find("Player").GetComponent<PlayerMovement>().holding = false;
+            player.GetComponent<PlayerMovement>().holding = false;
             follower = false;
         }
 
-        if (gameObject.transform.position.y <= GameObject.Find("CrossingPoint").transform.position.y)
+        if (gameObject.transform.position.y <= crossingPoint.transform.position.y)
         {
             side = true;
         }
@@ -39,7 +47,7 @@ public class Snap : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(GameObject.Find("Player").GetComponent<PlayerMovement>().holding == false)
+        if(player.GetComponent<PlayerMovement>().holding == false && player.GetComponent<PlaySide>().side == side)
         {
             follower = true;
         }   

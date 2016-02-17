@@ -30,7 +30,7 @@ public class StatueDetection : MonoBehaviour {
 
         if (counter >= 8)
         {
-            for (int g = 0; g < 8; g++)
+            for (int g = 0; g < 3; g++)
             {
                 wall[g].gameObject.SetActive(false);
             }

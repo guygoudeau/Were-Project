@@ -373,79 +373,6 @@ Prefab:
     - {fileID: 6164406, guid: 97a92de9fb738a74089026693323a4ed, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 97a92de9fb738a74089026693323a4ed, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &31200777
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 224: {fileID: 31200778}
-  - 222: {fileID: 31200780}
-  - 114: {fileID: 31200779}
-  m_Layer: 5
-  m_Name: Villager Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &31200778
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 31200777}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 367798319}
-  m_RootOrder: 0
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 122}
-  m_SizeDelta: {x: 463, y: 120}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &31200779
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 31200777}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.95862055, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: VillagerText
---- !u!222 &31200780
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 31200777}
 --- !u!1001 &33387945
 Prefab:
   m_ObjectHideFlags: 0
@@ -642,7 +569,7 @@ MonoBehaviour:
   - {fileID: 116272171}
   speed: 2
   moveRate: 3
-  villagerText: {fileID: 31200779}
+  villagerText: {fileID: 1914740475}
   villSay: Psssh. This party is lame.
   speach: 0
 --- !u!50 &82031680
@@ -746,10 +673,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9166d717d25eea4aa4a9a8c7b602d29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrolPoints: []
-  speed: 0
+  patrolPoints:
+  - {fileID: 942743709}
+  speed: 1
   moveRate: 2
-  villagerText: {fileID: 31200779}
+  villagerText: {fileID: 1914740475}
   villSay: 'You: He''s really staring down those beans.'
   speach: 0
 --- !u!61 &101964268
@@ -805,9 +733,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -14.1, y: 6.69, z: 13.390625}
   m_LocalScale: {x: 0.7351, y: 0.64021885, z: 0.7351}
-  m_Children: []
+  m_Children:
+  - {fileID: 942743709}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
 --- !u!1001 &106626518
 Prefab:
   m_ObjectHideFlags: 0
@@ -980,7 +909,7 @@ MonoBehaviour:
   - {fileID: 1882018223}
   speed: 2
   moveRate: 3
-  villagerText: {fileID: 31200779}
+  villagerText: {fileID: 1914740475}
   villSay: DJ Vilaga!!
   speach: 0
 --- !u!50 &123055360
@@ -1224,10 +1153,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9166d717d25eea4aa4a9a8c7b602d29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrolPoints: []
+  patrolPoints:
+  - {fileID: 1875670265}
   speed: 0
   moveRate: 2
-  villagerText: {fileID: 31200779}
+  villagerText: {fileID: 1914740475}
   villSay: 'You: Just a bag of beans.'
   speach: 0
 --- !u!61 &153804613
@@ -1283,9 +1213,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -12.41, y: 6.72, z: 13.390625}
   m_LocalScale: {x: 0.66398805, y: 0.66398805, z: 0.66398805}
-  m_Children: []
+  m_Children:
+  - {fileID: 1875670265}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
 --- !u!1001 &154726201
 Prefab:
   m_ObjectHideFlags: 0
@@ -1458,7 +1389,99 @@ Transform:
   - {fileID: 82031678}
   - {fileID: 116272171}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
+--- !u!1 &205163108
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 205163112}
+  - 223: {fileID: 205163111}
+  - 114: {fileID: 205163110}
+  - 114: {fileID: 205163109}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &205163109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 205163108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &205163110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 205163108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &205163111
+Canvas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 205163108}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &205163112
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 205163108}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 1914740474}
+  - {fileID: 390195976}
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1001 &206015052
 Prefab:
   m_ObjectHideFlags: 0
@@ -1840,7 +1863,7 @@ MonoBehaviour:
   - {fileID: 762703694}
   speed: 2
   moveRate: 5
-  villagerText: {fileID: 31200779}
+  villagerText: {fileID: 1914740475}
   villSay: 'You: How does one pass out while standing?!?!'
   speach: 0
 --- !u!50 &336280117
@@ -1967,7 +1990,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
 --- !u!4 &347511458 stripped
 Transform:
   m_PrefabParentObject: {fileID: 488682, guid: 97a92de9fb738a74089026693323a4ed, type: 2}
@@ -1980,98 +2003,79 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 488682, guid: 97a92de9fb738a74089026693323a4ed, type: 2}
   m_PrefabInternal: {fileID: 2140027758}
---- !u!1 &367798315
+--- !u!1 &390195975
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
-  - 224: {fileID: 367798319}
-  - 223: {fileID: 367798318}
-  - 114: {fileID: 367798317}
-  - 114: {fileID: 367798316}
+  - 224: {fileID: 390195976}
+  - 222: {fileID: 390195978}
+  - 114: {fileID: 390195977}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: TimeText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &367798316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 367798315}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &367798317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 367798315}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
---- !u!223 &367798318
-Canvas:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 367798315}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
---- !u!224 &367798319
+--- !u!224 &390195976
 RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 367798315}
+  m_GameObject: {fileID: 390195975}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_Children:
-  - {fileID: 31200778}
-  - {fileID: 985436502}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 205163112}
+  m_RootOrder: 1
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: -15}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &390195977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 390195975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: TimeText
+--- !u!222 &390195978
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 390195975}
 --- !u!1 &419516333
 GameObject:
   m_ObjectHideFlags: 0
@@ -2119,7 +2123,7 @@ MonoBehaviour:
   - {fileID: 1668301716}
   speed: 2
   moveRate: 5
-  villagerText: {fileID: 31200779}
+  villagerText: {fileID: 1914740475}
   villSay: Well congrats. You are cured. Now go, enjoy the party.
   speach: 0
 --- !u!50 &419516336
@@ -2379,7 +2383,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 401572, guid: 346810ccf697902408a979eefd689585, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 439346, guid: 346810ccf697902408a979eefd689585, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 346810ccf697902408a979eefd689585, type: 2}
@@ -2399,12 +2407,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9166d717d25eea4aa4a9a8c7b602d29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrolPoints: []
+  patrolPoints:
+  - {fileID: 1701652511}
   speed: 0
   moveRate: 5
-  villagerText: {fileID: 31200779}
+  villagerText: {fileID: 1914740475}
   villSay: DUM DUM, BRING ME RUM RUM.
   speach: 0
+--- !u!4 &480280141 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 401572, guid: 346810ccf697902408a979eefd689585, type: 2}
+  m_PrefabInternal: {fileID: 480280136}
 --- !u!4 &485210403 stripped
 Transform:
   m_PrefabParentObject: {fileID: 470892, guid: 1cad7bfe0321ae64ba76db0c6c45259e, type: 2}
@@ -3256,6 +3269,10 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 488682, guid: 97a92de9fb738a74089026693323a4ed, type: 2}
   m_PrefabInternal: {fileID: 1429594204}
+--- !u!4 &828239402 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 436052, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
+  m_PrefabInternal: {fileID: 1935461250}
 --- !u!1001 &830556992
 Prefab:
   m_ObjectHideFlags: 0
@@ -3480,7 +3497,7 @@ Transform:
   - {fileID: 336280115}
   - {fileID: 762703694}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
 --- !u!4 &892081183 stripped
 Transform:
   m_PrefabParentObject: {fileID: 470892, guid: 1cad7bfe0321ae64ba76db0c6c45259e, type: 2}
@@ -3784,6 +3801,33 @@ Prefab:
     - {fileID: 6114932, guid: 0774f292dfe1c4e40ab3555656cef9ba, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 0774f292dfe1c4e40ab3555656cef9ba, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &942743708
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 137594, guid: 39f6e4d238c0b9b4e8f96d69ef9d8cf0, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 942743709}
+  m_Layer: 0
+  m_Name: PatrolPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &942743709
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 425736, guid: 39f6e4d238c0b9b4e8f96d69ef9d8cf0, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 942743708}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -18.21606}
+  m_LocalScale: {x: 1.3603592, y: 1.5619658, z: 1.3603592}
+  m_Children: []
+  m_Father: {fileID: 101964270}
+  m_RootOrder: 0
 --- !u!1001 &957462797
 Prefab:
   m_ObjectHideFlags: 0
@@ -3835,79 +3879,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 488682, guid: 97a92de9fb738a74089026693323a4ed, type: 2}
   m_PrefabInternal: {fileID: 1801059729}
---- !u!1 &985436501
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 224: {fileID: 985436502}
-  - 222: {fileID: 985436504}
-  - 114: {fileID: 985436503}
-  m_Layer: 5
-  m_Name: TimeText
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &985436502
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 985436501}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 367798319}
-  m_RootOrder: 1
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -15}
-  m_SizeDelta: {x: 160, y: 30}
-  m_Pivot: {x: 0, y: 1}
---- !u!114 &985436503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 985436501}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: TimeText
---- !u!222 &985436504
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 985436501}
 --- !u!4 &988216229 stripped
 Transform:
   m_PrefabParentObject: {fileID: 470892, guid: 1cad7bfe0321ae64ba76db0c6c45259e, type: 2}
@@ -4680,7 +4651,7 @@ Transform:
   - {fileID: 123055358}
   - {fileID: 1882018223}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!1001 &1254510820
 Prefab:
   m_ObjectHideFlags: 0
@@ -4960,10 +4931,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9166d717d25eea4aa4a9a8c7b602d29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  patrolPoints: []
+  patrolPoints:
+  - {fileID: 1701652511}
   speed: 0
   moveRate: 2
-  villagerText: {fileID: 31200779}
+  villagerText: {fileID: 1914740475}
   villSay: 'You: What does the fox say?'
   speach: 0
 --- !u!61 &1379928070
@@ -5021,7 +4993,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
 --- !u!4 &1385087277 stripped
 Transform:
   m_PrefabParentObject: {fileID: 411068, guid: 0774f292dfe1c4e40ab3555656cef9ba, type: 2}
@@ -5302,7 +5274,7 @@ Transform:
   - {fileID: 1314300598}
   - {fileID: 778329047}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!4 &1411799556 stripped
 Transform:
   m_PrefabParentObject: {fileID: 470892, guid: 1cad7bfe0321ae64ba76db0c6c45259e, type: 2}
@@ -5889,6 +5861,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2138417219}
   m_RootOrder: 1
+--- !u!1 &1701652510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 137594, guid: 39f6e4d238c0b9b4e8f96d69ef9d8cf0, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1701652511}
+  m_Layer: 0
+  m_Name: PatrolPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1701652511
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 425736, guid: 39f6e4d238c0b9b4e8f96d69ef9d8cf0, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1701652510}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.4463215, y: 0.4463215, z: 0.4463215}
+  m_Children: []
+  m_Father: {fileID: 480280141}
+  m_RootOrder: 0
 --- !u!1001 &1706497380
 Prefab:
   m_ObjectHideFlags: 0
@@ -6347,7 +6346,7 @@ MonoBehaviour:
   - {fileID: 1899292803}
   speed: 2
   moveRate: 3
-  villagerText: {fileID: 31200779}
+  villagerText: {fileID: 1914740475}
   villSay: PAAAARRTAAAAYYY!!!
   speach: 0
 --- !u!50 &1804498734
@@ -6617,6 +6616,33 @@ Prefab:
     - {fileID: 6164406, guid: 97a92de9fb738a74089026693323a4ed, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 97a92de9fb738a74089026693323a4ed, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1875670264
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 137594, guid: 39f6e4d238c0b9b4e8f96d69ef9d8cf0, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1875670265}
+  m_Layer: 0
+  m_Name: PatrolPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1875670265
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 425736, guid: 39f6e4d238c0b9b4e8f96d69ef9d8cf0, type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1875670264}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -20.166967}
+  m_LocalScale: {x: 1.5060512, y: 1.5060512, z: 1.5060512}
+  m_Children: []
+  m_Father: {fileID: 153804615}
+  m_RootOrder: 0
 --- !u!4 &1881696638 stripped
 Transform:
   m_PrefabParentObject: {fileID: 411068, guid: 0774f292dfe1c4e40ab3555656cef9ba, type: 2}
@@ -6725,6 +6751,79 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 488682, guid: 97a92de9fb738a74089026693323a4ed, type: 2}
   m_PrefabInternal: {fileID: 1385986919}
+--- !u!1 &1914740473
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1914740474}
+  - 222: {fileID: 1914740476}
+  - 114: {fileID: 1914740475}
+  m_Layer: 5
+  m_Name: Villager Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1914740474
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1914740473}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 205163112}
+  m_RootOrder: 0
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -90}
+  m_SizeDelta: {x: 463, y: 120}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1914740475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1914740473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0.95862055, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: VillagerText
+--- !u!222 &1914740476
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1914740473}
 --- !u!1001 &1917410602
 Prefab:
   m_ObjectHideFlags: 0
@@ -6825,13 +6924,17 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11459998, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
+      propertyPath: patrolPoints.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 461090, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -3.7
+      value: -0.04
       objectReference: {fileID: 0}
     - target: {fileID: 461090, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 10.4
+      value: 6.13
       objectReference: {fileID: 0}
     - target: {fileID: 461090, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
       propertyPath: m_LocalPosition.z
@@ -6860,10 +6963,30 @@ Prefab:
     - target: {fileID: 11459998, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
       propertyPath: villagerText
       value: 
-      objectReference: {fileID: 31200779}
+      objectReference: {fileID: 1914740475}
     - target: {fileID: 11459998, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
       propertyPath: villSay
       value: Hit the red ball 4 times to go back to the menu.
+      objectReference: {fileID: 0}
+    - target: {fileID: 11459998, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
+      propertyPath: patrolPoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 828239402}
+    - target: {fileID: 436052, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 436052, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 419206, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 419206, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
@@ -7538,7 +7661,7 @@ Transform:
   - {fileID: 419516334}
   - {fileID: 1668301716}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
 --- !u!1001 &2140027758
 Prefab:
   m_ObjectHideFlags: 0

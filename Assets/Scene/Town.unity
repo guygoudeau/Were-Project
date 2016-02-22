@@ -6198,7 +6198,7 @@ MonoBehaviour:
   - {fileID: 1140161520}
   speed: 2
   moveRate: 3
-  villagerText: {fileID: 0}
+  villagerText: {fileID: 1323294607}
   villSay: These flowers smell soooo good.
   speach: 0
 --- !u!50 &417560374
@@ -12293,7 +12293,7 @@ MonoBehaviour:
   - {fileID: 1269872748}
   speed: 2
   moveRate: 5
-  villagerText: {fileID: 0}
+  villagerText: {fileID: 1323294607}
   villSay: The Hedge maze east of town is so confusing. I got turned around twice
     in it.
   speach: 0
@@ -13884,7 +13884,7 @@ MonoBehaviour:
   - {fileID: 2031311170}
   speed: 2
   moveRate: 6
-  villagerText: {fileID: 0}
+  villagerText: {fileID: 1323294607}
   villSay: Hey, if you get a chance, can you help farmer Fred west of town? I think
     he needs help with his stock.
   speach: 0
@@ -17203,7 +17203,7 @@ MonoBehaviour:
   - {fileID: 2074438334}
   speed: 2
   moveRate: 10
-  villagerText: {fileID: 0}
+  villagerText: {fileID: 1323294607}
   villSay: Hello friend. You are looking pale. You should go to Madam Lovely North
     of the town. She's a little.. disturbing, but she can cure you.
   speach: 0
@@ -18843,7 +18843,7 @@ MonoBehaviour:
   - {fileID: 746337323}
   speed: 2
   moveRate: 4
-  villagerText: {fileID: 0}
+  villagerText: {fileID: 1323294607}
   villSay: 'You: My God. Did I do this? I need to find the Bartender.'
   speach: 0
 --- !u!61 &1285832468
@@ -19366,6 +19366,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1323294607 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11472670, guid: 021567469de48fa44afed9b91fbdb5ed,
+    type: 2}
+  m_PrefabInternal: {fileID: 1323294606}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &1324292029
 Prefab:
   m_ObjectHideFlags: 0
@@ -22668,7 +22674,7 @@ MonoBehaviour:
   - {fileID: 35943641}
   speed: 2
   moveRate: 6
-  villagerText: {fileID: 0}
+  villagerText: {fileID: 1323294607}
   villSay: Have you seen the Statues south of town? The gems in their mouth's are
     quartz.
   speach: 0

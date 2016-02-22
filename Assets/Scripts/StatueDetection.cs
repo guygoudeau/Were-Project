@@ -1,14 +1,12 @@
 ﻿using UnityEngine;
-using System.Collections;
-using UnityEngine.UI;
+using System.Collections.Generic;
 public class StatueDetection : MonoBehaviour {
 
     [HideInInspector] public string current;
 
-    public GameObject[] statues = new GameObject[8];
+    public GameObject[] statues;
     private int counter = 0;
     public GameObject[] wall;
-    public GameObject text;
 
     void Start()
     {
@@ -51,7 +49,6 @@ public class StatueDetection : MonoBehaviour {
         if (other.gameObject.tag == "Statue")
         { 
             current = other.gameObject.name;
-            text.GetComponent<Text>().text = "Hit" + other.gameObject.name;
             Check();
         }
     }

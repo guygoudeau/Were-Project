@@ -6198,7 +6198,7 @@ MonoBehaviour:
   - {fileID: 1140161520}
   speed: 2
   moveRate: 3
-  villagerText: {fileID: 1323294607}
+  villagerText: {fileID: 0}
   villSay: These flowers smell soooo good.
   speach: 0
 --- !u!50 &417560374
@@ -12293,7 +12293,7 @@ MonoBehaviour:
   - {fileID: 1269872748}
   speed: 2
   moveRate: 5
-  villagerText: {fileID: 1323294607}
+  villagerText: {fileID: 0}
   villSay: The Hedge maze east of town is so confusing. I got turned around twice
     in it.
   speach: 0
@@ -13884,7 +13884,7 @@ MonoBehaviour:
   - {fileID: 2031311170}
   speed: 2
   moveRate: 6
-  villagerText: {fileID: 1323294607}
+  villagerText: {fileID: 0}
   villSay: Hey, if you get a chance, can you help farmer Fred west of town? I think
     he needs help with his stock.
   speach: 0
@@ -17203,7 +17203,7 @@ MonoBehaviour:
   - {fileID: 2074438334}
   speed: 2
   moveRate: 10
-  villagerText: {fileID: 1323294607}
+  villagerText: {fileID: 0}
   villSay: Hello friend. You are looking pale. You should go to Madam Lovely North
     of the town. She's a little.. disturbing, but she can cure you.
   speach: 0
@@ -18843,7 +18843,7 @@ MonoBehaviour:
   - {fileID: 746337323}
   speed: 2
   moveRate: 4
-  villagerText: {fileID: 1323294607}
+  villagerText: {fileID: 0}
   villSay: 'You: My God. Did I do this? I need to find the Bartender.'
   speach: 0
 --- !u!61 &1285832468
@@ -19284,94 +19284,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 486888, guid: a102679d200678a488546420fb886098, type: 2}
   m_PrefabInternal: {fileID: 1151682896}
---- !u!1001 &1323294606
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_RootOrder
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-  m_IsPrefabParent: 0
---- !u!114 &1323294607 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11472670, guid: 021567469de48fa44afed9b91fbdb5ed,
-    type: 2}
-  m_PrefabInternal: {fileID: 1323294606}
-  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &1324292029
 Prefab:
   m_ObjectHideFlags: 0
@@ -20797,6 +20709,21 @@ Prefab:
     - {fileID: 6114932, guid: 0774f292dfe1c4e40ab3555656cef9ba, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 0774f292dfe1c4e40ab3555656cef9ba, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1408087896 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 188518, guid: b15466208e687dd4480ba84b1d1ad05f, type: 2}
+  m_PrefabInternal: {fileID: 1463611575}
+--- !u!114 &1408087901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1408087896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fd511c9572a9084187a4383a0318f24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1408911359 stripped
 Transform:
   m_PrefabParentObject: {fileID: 486888, guid: a102679d200678a488546420fb886098, type: 2}
@@ -21375,6 +21302,10 @@ Prefab:
       propertyPath: playRB
       value: 
       objectReference: {fileID: 1508732385}
+    - target: {fileID: 11472712, guid: b15466208e687dd4480ba84b1d1ad05f, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b15466208e687dd4480ba84b1d1ad05f, type: 2}
   m_IsPrefabParent: 0
@@ -22683,7 +22614,7 @@ MonoBehaviour:
   - {fileID: 35943641}
   speed: 2
   moveRate: 6
-  villagerText: {fileID: 1323294607}
+  villagerText: {fileID: 0}
   villSay: Have you seen the Statues south of town? The gems in their mouth's are
     quartz.
   speach: 0

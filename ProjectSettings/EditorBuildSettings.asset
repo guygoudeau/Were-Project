@@ -23,3 +23,9 @@ EditorBuildSettings:
     path: Assets/Scene/Alcove.unity
   - enabled: 1
     path: Assets/Scene/Win.unity
+  - enabled: 1
+    path: Assets/Scene/Lose.unity
+  - enabled: 1
+    path: Assets/Scene/PreWin.unity
+  - enabled: 1
+    path: Assets/Scene/PreLose.unity

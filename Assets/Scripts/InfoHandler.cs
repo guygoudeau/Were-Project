@@ -12,13 +12,16 @@ public class InfoHandler : MonoBehaviour {
     public string lastLevel;
     public Text timerText;
 
-    private GameObject pas;//Paused canvas
+    private GameObject pas;     //Paused canvas
     public bool paused = false;
+    public bool win = false;
 
     void Start()
     {
         DontDestroyOnLoad(this.gameObject);
         timerText = GameObject.Find("TimeText").GetComponent<Text>();
+        pas = GameObject.Find("Paused Canvas");
+        pas.SetActive(false);
     }
 
     void Update()
@@ -26,6 +29,7 @@ public class InfoHandler : MonoBehaviour {
         if(Input.GetKeyDown(KeyCode.P))
         {
             paused = togglePause();
+            pas.SetActive(paused);
         }
     }
 
@@ -33,29 +37,35 @@ public class InfoHandler : MonoBehaviour {
     {
         ///Actual Code
         /// 
-        //timerText = GameObject.Find("TimeText").GetComponent<Text>();
-        //timer += Time.deltaTime;
-        //currentTime = maxTime - timer;
+        if(win == false)
+        {
+            timerText = GameObject.Find("TimeText").GetComponent<Text>();
+            timer += Time.deltaTime;
+            currentTime = maxTime - timer;
 
-        //int minutes = Mathf.FloorToInt(currentTime / 60F);
-        //int seconds = Mathf.FloorToInt(currentTime - minutes * 60);
-        //string niceTime = string.Format("{0:0}:{1:00}", minutes, seconds);
+            int minutes = Mathf.FloorToInt(currentTime / 60F);
+            int seconds = Mathf.FloorToInt(currentTime - minutes * 60);
+            string niceTime = string.Format("{0:0}:{1:00}", minutes, seconds);
 
-        //timerText.text = niceTime;
+            timerText.text = niceTime;
 
-        //if(currentTime <= 0f)
-        //{
-        //    SceneManager.LoadScene("Menu");
-        //}
+            if (currentTime <= 0f)
+            {
+                SceneManager.LoadScene("Menu");
+            }
+        }
 
         //Test Code. trying to find out how long it takes to complete.        
-        timer += Time.deltaTime;
+        //if(win == false)
+        //{
+        //    timer += Time.deltaTime;
 
-        int minutes = Mathf.FloorToInt(timer / 60F);
-        int seconds = Mathf.FloorToInt(timer - minutes * 60);
-        string niceTime = string.Format("{0:0}:{1:00}", minutes, seconds);
+        //    int minutes = Mathf.FloorToInt(timer / 60F);
+        //    int seconds = Mathf.FloorToInt(timer - minutes * 60);
+        //    string niceTime = string.Format("{0:0}:{1:00}", minutes, seconds);
 
-        timerText.text = niceTime;
+        //    timerText.text = niceTime;
+        //}
     }
 
     bool togglePause()
@@ -63,12 +73,13 @@ public class InfoHandler : MonoBehaviour {
         if (Time.timeScale == 0f)
         {
             Time.timeScale = 1f;
-            return (false);
+            return false;
         }
+
         else
         {
             Time.timeScale = 0f;
-            return (true);
+            return true;
         }
     }
 }

@@ -44,5 +44,13 @@ public class Menu : MonoBehaviour
         {
             GameObject.Find("InformationHolder(Clone)").GetComponent<InfoHandler>().timer = 0;
         } 
+
+        else
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                GameObject.Find("InformationHolder(Clone)").GetComponent<InfoHandler>().req[i] = false;
+            }
+        }    
     }
 }

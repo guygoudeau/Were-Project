@@ -7,10 +7,12 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour {
 
-    private Rigidbody2D playRB;
+    public Rigidbody2D playRB;
     private Vector2 movement;
     public int speed;
     public GameObject infoHold;
+    public Canvas mainCanvas;
+    public Canvas pausedCanvas;
     public GameObject[] spawnPoints;
 
     [HideInInspector] public bool holding = false;
@@ -28,6 +30,17 @@ public class PlayerMovement : MonoBehaviour {
             Instantiate(infoHold);
         }
 
+        if (GameObject.Find("MainCanvas(Clone)") == null)
+        {
+            Instantiate(mainCanvas);
+        }
+
+        //if (GameObject.Find("PausedCanvas(Clone)") == null)
+        //{
+        //    Instantiate(pausedCanvas);
+            
+        //}
+
         infoHold = GameObject.Find("InformationHolder(Clone)");        
 
         for(int fin = 0; fin < spawnPoints.Length; fin++)
@@ -40,10 +53,13 @@ public class PlayerMovement : MonoBehaviour {
     }
 
 	void Update () {
-        float h = Input.GetAxisRaw("Horizontal"); //x Axis control
-        float v = Input.GetAxisRaw("Vertical");
+        if(infoHold.GetComponent<InfoHandler>().paused == false)
+        {
+            float h = Input.GetAxisRaw("Horizontal"); //x Axis control
+            float v = Input.GetAxisRaw("Vertical");
 
-        movement = new Vector2(h, v);      
-        playRB.AddForce(movement * speed);
+            movement = new Vector2(h, v);      
+            playRB.AddForce(movement * speed);
+        }     
     }
 }

@@ -12,10 +12,21 @@ public class InfoHandler : MonoBehaviour {
     public string lastLevel;
     public Text timerText;
 
-    void Awake()
+    private GameObject pas;//Paused canvas
+    public bool paused = false;
+
+    void Start()
     {
         DontDestroyOnLoad(this.gameObject);
-        timerText = GameObject.Find("TimeText").GetComponent<Text>();       
+        timerText = GameObject.Find("TimeText").GetComponent<Text>();
+    }
+
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.P))
+        {
+            paused = togglePause();
+        }
     }
 
     void FixedUpdate()
@@ -37,8 +48,7 @@ public class InfoHandler : MonoBehaviour {
         //    SceneManager.LoadScene("Menu");
         //}
 
-        //Test Code. trying to find out how long it takes to complete.
-        timerText = GameObject.Find("TimeText").GetComponent<Text>();
+        //Test Code. trying to find out how long it takes to complete.        
         timer += Time.deltaTime;
 
         int minutes = Mathf.FloorToInt(timer / 60F);
@@ -46,5 +56,19 @@ public class InfoHandler : MonoBehaviour {
         string niceTime = string.Format("{0:0}:{1:00}", minutes, seconds);
 
         timerText.text = niceTime;
+    }
+
+    bool togglePause()
+    {
+        if (Time.timeScale == 0f)
+        {
+            Time.timeScale = 1f;
+            return (false);
+        }
+        else
+        {
+            Time.timeScale = 0f;
+            return (true);
+        }
     }
 }

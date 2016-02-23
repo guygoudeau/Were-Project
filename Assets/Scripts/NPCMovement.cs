@@ -19,6 +19,7 @@ public class NPCMovement : MonoBehaviour {
     void Start()
     {
         currentPoint = 0;
+        villagerText = GameObject.Find("Villager Text").GetComponent<Text>();
         villagerText.text = "";
     }
 

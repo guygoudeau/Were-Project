@@ -1021,6 +1021,94 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 486888, guid: a102679d200678a488546420fb886098, type: 2}
   m_PrefabInternal: {fileID: 409495893}
+--- !u!1001 &421576841
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
+  m_IsPrefabParent: 0
+--- !u!114 &421576842 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11472670, guid: 021567469de48fa44afed9b91fbdb5ed,
+    type: 2}
+  m_PrefabInternal: {fileID: 421576841}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &487436560
 Prefab:
   m_ObjectHideFlags: 0
@@ -2716,7 +2804,7 @@ Prefab:
     - target: {fileID: 11459998, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
       propertyPath: villagerText
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 421576842}
     - target: {fileID: 436052, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
       propertyPath: m_RootOrder
       value: 1
@@ -5391,7 +5479,7 @@ MonoBehaviour:
   - {fileID: 875836341}
   speed: 2
   moveRate: 13
-  villagerText: {fileID: 0}
+  villagerText: {fileID: 421576842}
   villSay: You, you have been cursed. Madam Lovely can cure you, but she needs items.
     She needs Garlic, Quartz, and Dragon's Blood. Go, beyond the village for these
     items.

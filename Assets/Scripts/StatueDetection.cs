@@ -1,11 +1,10 @@
 ﻿using UnityEngine;
-using System.Collections;
-
+using System.Collections.Generic;
 public class StatueDetection : MonoBehaviour {
 
     [HideInInspector] public string current;
 
-    public GameObject[] statues = new GameObject[8];
+    public GameObject[] statues;
     private int counter = 0;
     public GameObject[] wall;
 

@@ -569,7 +569,7 @@ MonoBehaviour:
   - {fileID: 116272171}
   speed: 2
   moveRate: 3
-  villagerText: {fileID: 1318680975}
+  villagerText: {fileID: 0}
   villSay: Psssh. This party is lame.
   speach: 0
 --- !u!50 &82031680
@@ -677,7 +677,7 @@ MonoBehaviour:
   - {fileID: 942743709}
   speed: 1
   moveRate: 2
-  villagerText: {fileID: 1318680975}
+  villagerText: {fileID: 0}
   villSay: 'You: He''s really staring down those beans.'
   speach: 0
 --- !u!61 &101964268
@@ -909,7 +909,7 @@ MonoBehaviour:
   - {fileID: 1882018223}
   speed: 2
   moveRate: 3
-  villagerText: {fileID: 1318680975}
+  villagerText: {fileID: 0}
   villSay: DJ Vilaga!!
   speach: 0
 --- !u!50 &123055360
@@ -1157,7 +1157,7 @@ MonoBehaviour:
   - {fileID: 1875670265}
   speed: 0
   moveRate: 2
-  villagerText: {fileID: 1318680975}
+  villagerText: {fileID: 0}
   villSay: 'You: Just a bag of beans.'
   speach: 0
 --- !u!61 &153804613
@@ -1771,7 +1771,7 @@ MonoBehaviour:
   - {fileID: 762703694}
   speed: 2
   moveRate: 5
-  villagerText: {fileID: 1318680975}
+  villagerText: {fileID: 0}
   villSay: 'You: How does one pass out while standing?!?!'
   speach: 0
 --- !u!50 &336280117
@@ -1958,7 +1958,7 @@ MonoBehaviour:
   - {fileID: 1668301716}
   speed: 2
   moveRate: 5
-  villagerText: {fileID: 1318680975}
+  villagerText: {fileID: 0}
   villSay: Well congrats. You are cured. Now go, enjoy the party.
   speach: 0
 --- !u!50 &419516336
@@ -2246,7 +2246,7 @@ MonoBehaviour:
   - {fileID: 1701652511}
   speed: 0
   moveRate: 5
-  villagerText: {fileID: 1318680975}
+  villagerText: {fileID: 0}
   villSay: DUM DUM, BRING ME RUM RUM.
   speach: 0
 --- !u!4 &480280141 stripped
@@ -4678,94 +4678,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 470892, guid: 1cad7bfe0321ae64ba76db0c6c45259e, type: 2}
   m_PrefabInternal: {fileID: 1461956394}
---- !u!1001 &1318680974
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_RootOrder
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22465282, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-      propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 021567469de48fa44afed9b91fbdb5ed, type: 2}
-  m_IsPrefabParent: 0
---- !u!114 &1318680975 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11472670, guid: 021567469de48fa44afed9b91fbdb5ed,
-    type: 2}
-  m_PrefabInternal: {fileID: 1318680974}
-  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!4 &1321391879 stripped
 Transform:
   m_PrefabParentObject: {fileID: 470892, guid: 1cad7bfe0321ae64ba76db0c6c45259e, type: 2}
@@ -4858,7 +4770,7 @@ MonoBehaviour:
   - {fileID: 1701652511}
   speed: 0
   moveRate: 2
-  villagerText: {fileID: 1318680975}
+  villagerText: {fileID: 0}
   villSay: 'You: What does the fox say?'
   speach: 0
 --- !u!61 &1379928070
@@ -6269,7 +6181,7 @@ MonoBehaviour:
   - {fileID: 1899292803}
   speed: 2
   moveRate: 3
-  villagerText: {fileID: 1318680975}
+  villagerText: {fileID: 0}
   villSay: PAAAARRTAAAAYYY!!!
   speach: 0
 --- !u!50 &1804498734
@@ -6813,7 +6725,7 @@ Prefab:
     - target: {fileID: 11459998, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
       propertyPath: villagerText
       value: 
-      objectReference: {fileID: 1318680975}
+      objectReference: {fileID: 0}
     - target: {fileID: 11459998, guid: d0153f779507d934ebba04894a4c0af0, type: 2}
       propertyPath: villSay
       value: Hit the red ball 4 times to go back to the menu.

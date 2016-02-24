@@ -15,23 +15,29 @@ public class InfoHandler : MonoBehaviour {
     private GameObject pas;     //Paused canvas
     public bool paused = false;
     public bool win = false;
+    private static InfoHandler _instance;
+    public static InfoHandler instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = GameObject.FindObjectOfType<InfoHandler>();
+                DontDestroyOnLoad(_instance.gameObject);
+            }
+
+            return _instance;
+        }
+    }
 
     void Start()
     {
-        DontDestroyOnLoad(this.gameObject);
+        print("Info Handler Start");
         timerText = GameObject.Find("TimeText").GetComponent<Text>();
-        pas = GameObject.Find("Paused Canvas");
-        pas.SetActive(false);
+        //pas = GameObject.Find("Paused Canvas");
+        //pas.SetActive(false);
     }
 
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.P))
-        {
-            paused = togglePause();
-            pas.SetActive(paused);
-        }
-    }
 
     void FixedUpdate()
     {
@@ -68,18 +74,18 @@ public class InfoHandler : MonoBehaviour {
         //}
     }
 
-    bool togglePause()
-    {
-        if (Time.timeScale == 0f)
-        {
-            Time.timeScale = 1f;
-            return false;
-        }
+    //bool togglePause()
+    //{
+    //    if (Time.timeScale == 0f)
+    //    {
+    //        Time.timeScale = 1f;
+    //        return false;
+    //    }
 
-        else
-        {
-            Time.timeScale = 0f;
-            return true;
-        }
-    }
+    //    else
+    //    {
+    //        Time.timeScale = 0f;
+    //        return true;
+    //    }
+    //}
 }

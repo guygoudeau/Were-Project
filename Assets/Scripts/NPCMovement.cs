@@ -7,7 +7,7 @@ public class NPCMovement : MonoBehaviour {
     public Transform[] patrolPoints;//The NPC's Patrol points
     public float speed;             //NPC's speed
     public float moveRate;          //How long the stop before each move
-    public Text villagerText;       //The text space the villager will fill
+    private Text villagerText;       //The text space the villager will fill
     public string villSay;          //What the villager will fill in in the space
 
     private int currentPoint;       //Current point the NPC is on
@@ -19,14 +19,12 @@ public class NPCMovement : MonoBehaviour {
     void Start()
     {
         currentPoint = 0;
-        villagerText = GameObject.Find("Villager Text").GetComponent<Text>();
-        villagerText.text = "";
     }
 
 
     void Update()
     {
-        if(moving == true && patrolPoints[currentPoint] != null)
+        if (moving == true && patrolPoints[currentPoint] != null)
         {
             if (gameObject.transform.position == patrolPoints[currentPoint].transform.position)
              {
@@ -49,7 +47,7 @@ public class NPCMovement : MonoBehaviour {
 
             if(speach == true)
             {
-                villagerText.text = "";
+                UIRoot.instance.NPCText("");
                 speach = false;
             }          
         }
@@ -61,7 +59,8 @@ public class NPCMovement : MonoBehaviour {
         {
             moving = false;
             speach = true;
-            villagerText.text = villSay;
+            UIRoot.instance.EnableMenu("NPC Canvas");
+            UIRoot.instance.NPCText(villSay);
             nextMove = Time.time + moveRate;
         }
     }

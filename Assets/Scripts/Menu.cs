@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
@@ -10,10 +10,19 @@ public class Menu : MonoBehaviour
     public Canvas howToPlay;
     public string level;
 
+    List<GameObject> _menus = new List<GameObject>();
     void Awake()
     {
-        OptionsCanvas.enabled = false;
-        howToPlay.enabled = false;
+        _menus.Add(MainCanvas.gameObject);
+        _menus.Add(OptionsCanvas.gameObject);
+        _menus.Add(howToPlay.gameObject);
+        DisableMenus();
+    }
+
+    public void EnableMenu(GameObject go)
+    {
+        if (go.name == "Play Button")
+            DisableMenus(); 
     }
    
     public void OptionsOn()
@@ -43,10 +52,25 @@ public class Menu : MonoBehaviour
         if (GameObject.Find("InformationHolder(Clone)") != null)
         {
             GameObject.Find("InformationHolder(Clone)").GetComponent<InfoHandler>().timer = 0;
+            GameObject.Find("InformationHolder(Clone)").GetComponent<InfoHandler>().win = false;
             for (int i = 0; i < 3; i++)
             {
                 GameObject.Find("InformationHolder(Clone)").GetComponent<InfoHandler>().req[i] = false;
             }
         }    
+    }
+
+    private void DisableMenus()
+    {
+        foreach(GameObject go in _menus)
+        {
+            go.SetActive(false);
+        }
+    }
+
+    public void EnableMenus()
+    {
+        foreach (GameObject go in _menus)
+            go.SetActive(true);
     }
 }

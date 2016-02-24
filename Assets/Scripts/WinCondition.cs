@@ -19,7 +19,7 @@ public class WinCondition : MonoBehaviour {
                 if (info.GetComponent<InfoHandler>().req[2] == true)
                 {
                     info.GetComponent<InfoHandler>().win = true;
-                    SceneManager.LoadScene("Win");
+                    SceneManager.LoadScene("PreWin");
                 }
             }
         }

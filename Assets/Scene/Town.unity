@@ -1452,7 +1452,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 118865864}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.99, y: 26.7, z: -10}
+  m_LocalPosition: {x: -507.51, y: -185.3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 79274311}
@@ -1508,8 +1508,8 @@ Transform:
   - {fileID: 657698677}
   - {fileID: 1192240393}
   - {fileID: 184753606}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 446015017}
+  m_RootOrder: 4
 --- !u!1001 &119229695
 Prefab:
   m_ObjectHideFlags: 0
@@ -1788,7 +1788,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 147177680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 38.94, y: 13.057697, z: 0}
+  m_LocalPosition: {x: -483.56, y: -198.9423, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 882410165}
@@ -1796,8 +1796,8 @@ Transform:
   - {fileID: 1547736692}
   - {fileID: 1996144490}
   - {fileID: 1269872748}
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 446015017}
+  m_RootOrder: 11
 --- !u!1001 &150848936
 Prefab:
   m_ObjectHideFlags: 0
@@ -4003,7 +4003,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 279532013}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 38.58, y: 28.98, z: 0}
+  m_LocalPosition: {x: -483.91998, y: -183.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 970014863}
@@ -4011,8 +4011,8 @@ Transform:
   - {fileID: 1559574}
   - {fileID: 55474593}
   - {fileID: 2031311170}
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 446015017}
+  m_RootOrder: 12
 --- !u!4 &280611689 stripped
 Transform:
   m_PrefabParentObject: {fileID: 486888, guid: a102679d200678a488546420fb886098, type: 2}
@@ -5241,7 +5241,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 341088355}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 6}
+  m_LocalPosition: {x: -522.5, y: -212, z: 6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2010589272}
@@ -5334,8 +5334,8 @@ Transform:
   - {fileID: 1841042291}
   - {fileID: 1425524636}
   - {fileID: 283016146}
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 446015017}
+  m_RootOrder: 1
 --- !u!4 &341988415 stripped
 Transform:
   m_PrefabParentObject: {fileID: 488682, guid: 97a92de9fb738a74089026693323a4ed, type: 2}
@@ -6198,7 +6198,6 @@ MonoBehaviour:
   - {fileID: 1140161520}
   speed: 2
   moveRate: 3
-  villagerText: {fileID: 0}
   villSay: These flowers smell soooo good.
   speach: 0
 --- !u!50 &417560374
@@ -6627,6 +6626,49 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 423286, guid: 6c8a70f7bd7bc374ca4e655435d242b7, type: 2}
   m_PrefabInternal: {fileID: 1177079752}
+--- !u!1 &446015016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 446015017}
+  m_Layer: 0
+  m_Name: env
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &446015017
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 446015016}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 522.5, y: 212, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 510475262}
+  - {fileID: 341088356}
+  - {fileID: 1389985402}
+  - {fileID: 1952743343}
+  - {fileID: 118865865}
+  - {fileID: 764423107}
+  - {fileID: 1952733747}
+  - {fileID: 2020654867}
+  - {fileID: 1875220017}
+  - {fileID: 1156059468}
+  - {fileID: 1390118242}
+  - {fileID: 147177681}
+  - {fileID: 279532014}
+  - {fileID: 1301695107}
+  - {fileID: 560292398}
+  - {fileID: 1712062243}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
 --- !u!1001 &451003328
 Prefab:
   m_ObjectHideFlags: 0
@@ -7411,7 +7453,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 510475261}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -522.5, y: -212, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1670065373}
@@ -7457,8 +7499,8 @@ Transform:
   - {fileID: 735764051}
   - {fileID: 411467539}
   - {fileID: 612674315}
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 446015017}
+  m_RootOrder: 0
 --- !u!4 &510528641 stripped
 Transform:
   m_PrefabParentObject: {fileID: 411068, guid: 0774f292dfe1c4e40ab3555656cef9ba, type: 2}
@@ -8285,13 +8327,13 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 560292397}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.56, y: 1.85, z: 0}
+  m_LocalPosition: {x: -519.94, y: -210.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1285832466}
   - {fileID: 746337323}
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_Father: {fileID: 446015017}
+  m_RootOrder: 14
 --- !u!4 &561258136 stripped
 Transform:
   m_PrefabParentObject: {fileID: 471408, guid: 508536a4e8b4bf74cae945c96f805d55, type: 2}
@@ -11125,7 +11167,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 764423106}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 39.4, y: 26.7, z: -10}
+  m_LocalPosition: {x: -483.1, y: -185.3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 160246224}
@@ -11181,8 +11223,8 @@ Transform:
   - {fileID: 1797180713}
   - {fileID: 917659944}
   - {fileID: 734751017}
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 446015017}
+  m_RootOrder: 5
 --- !u!4 &766569353 stripped
 Transform:
   m_PrefabParentObject: {fileID: 488682, guid: 97a92de9fb738a74089026693323a4ed, type: 2}
@@ -12293,7 +12335,6 @@ MonoBehaviour:
   - {fileID: 1269872748}
   speed: 2
   moveRate: 5
-  villagerText: {fileID: 0}
   villSay: The Hedge maze east of town is so confusing. I got turned around twice
     in it.
   speach: 0
@@ -13884,7 +13925,6 @@ MonoBehaviour:
   - {fileID: 2031311170}
   speed: 2
   moveRate: 6
-  villagerText: {fileID: 0}
   villSay: Hey, if you get a chance, can you help farmer Fred west of town? I think
     he needs help with his stock.
   speach: 0
@@ -16585,7 +16625,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1156059467}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.226553, y: 7.2609553, z: 0}
+  m_LocalPosition: {x: -495.27344, y: -204.73904, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 265844383}
@@ -16648,8 +16688,8 @@ Transform:
   - {fileID: 129803009}
   - {fileID: 1844486038}
   - {fileID: 1431117503}
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 446015017}
+  m_RootOrder: 9
 --- !u!4 &1158004700 stripped
 Transform:
   m_PrefabParentObject: {fileID: 471408, guid: 508536a4e8b4bf74cae945c96f805d55, type: 2}
@@ -17203,7 +17243,6 @@ MonoBehaviour:
   - {fileID: 2074438334}
   speed: 2
   moveRate: 10
-  villagerText: {fileID: 0}
   villSay: Hello friend. You are looking pale. You should go to Madam Lovely North
     of the town. She's a little.. disturbing, but she can cure you.
   speach: 0
@@ -18843,7 +18882,6 @@ MonoBehaviour:
   - {fileID: 746337323}
   speed: 2
   moveRate: 4
-  villagerText: {fileID: 0}
   villSay: 'You: My God. Did I do this? I need to find the Bartender.'
   speach: 0
 --- !u!61 &1285832468
@@ -19208,7 +19246,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1301695106}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.97, y: 22.75, z: 0}
+  m_LocalPosition: {x: -529.47, y: -189.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 417560372}
@@ -19216,8 +19254,8 @@ Transform:
   - {fileID: 253544945}
   - {fileID: 1455148838}
   - {fileID: 1140161520}
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 446015017}
+  m_RootOrder: 13
 --- !u!4 &1308007093 stripped
 Transform:
   m_PrefabParentObject: {fileID: 411068, guid: 0774f292dfe1c4e40ab3555656cef9ba, type: 2}
@@ -20306,7 +20344,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1389985401}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.99, y: 10.76, z: -10}
+  m_LocalPosition: {x: -507.51, y: -201.24, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 463985589}
@@ -20362,8 +20400,8 @@ Transform:
   - {fileID: 280611689}
   - {fileID: 563206913}
   - {fileID: 326688643}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 446015017}
+  m_RootOrder: 2
 --- !u!1 &1390118241
 GameObject:
   m_ObjectHideFlags: 0
@@ -20386,7 +20424,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1390118241}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.729337, y: 13.057697, z: 0}
+  m_LocalPosition: {x: -508.77066, y: -198.9423, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1572338780}
@@ -20394,8 +20432,8 @@ Transform:
   - {fileID: 1927980565}
   - {fileID: 1280885189}
   - {fileID: 35943641}
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_Father: {fileID: 446015017}
+  m_RootOrder: 10
 --- !u!1001 &1391337062
 Prefab:
   m_ObjectHideFlags: 0
@@ -20709,21 +20747,6 @@ Prefab:
     - {fileID: 6114932, guid: 0774f292dfe1c4e40ab3555656cef9ba, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 0774f292dfe1c4e40ab3555656cef9ba, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1408087896 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 188518, guid: b15466208e687dd4480ba84b1d1ad05f, type: 2}
-  m_PrefabInternal: {fileID: 1463611575}
---- !u!114 &1408087901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1408087896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fd511c9572a9084187a4383a0318f24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1408911359 stripped
 Transform:
   m_PrefabParentObject: {fileID: 486888, guid: a102679d200678a488546420fb886098, type: 2}
@@ -21305,6 +21328,10 @@ Prefab:
     - target: {fileID: 11472712, guid: b15466208e687dd4480ba84b1d1ad05f, type: 2}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8132786, guid: b15466208e687dd4480ba84b1d1ad05f, type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b15466208e687dd4480ba84b1d1ad05f, type: 2}
@@ -22614,7 +22641,6 @@ MonoBehaviour:
   - {fileID: 35943641}
   speed: 2
   moveRate: 6
-  villagerText: {fileID: 0}
   villSay: Have you seen the Statues south of town? The gems in their mouth's are
     quartz.
   speach: 0
@@ -24767,13 +24793,13 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1712062242}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.12, y: 48.18, z: 0}
+  m_LocalPosition: {x: -505.38, y: -163.82, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1183496695}
   - {fileID: 969514746}
   - {fileID: 2074438334}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 446015017}
   m_RootOrder: 15
 --- !u!4 &1712270591 stripped
 Transform:
@@ -26279,15 +26305,15 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1875220016}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -522.5, y: -212, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 873032221}
   - {fileID: 2008946382}
   - {fileID: 104845610}
   - {fileID: 631912352}
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 446015017}
+  m_RootOrder: 8
 --- !u!1001 &1877806685
 Prefab:
   m_ObjectHideFlags: 0
@@ -27728,7 +27754,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1952733746}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.23, y: 43.61, z: -10}
+  m_LocalPosition: {x: -494.27, y: -168.39, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 576697701}
@@ -27878,8 +27904,8 @@ Transform:
   - {fileID: 1682408572}
   - {fileID: 211412072}
   - {fileID: 1234494640}
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 446015017}
+  m_RootOrder: 6
 --- !u!1 &1952743342
 GameObject:
   m_ObjectHideFlags: 0
@@ -27902,7 +27928,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1952743342}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 39.4, y: 10.76, z: -10}
+  m_LocalPosition: {x: -483.1, y: -201.24, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 732645180}
@@ -27958,8 +27984,8 @@ Transform:
   - {fileID: 1085393833}
   - {fileID: 155973719}
   - {fileID: 327786552}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 446015017}
+  m_RootOrder: 3
 --- !u!1001 &1956649648
 Prefab:
   m_ObjectHideFlags: 0
@@ -29099,7 +29125,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2020654866}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.803213, y: 22.752493, z: 9.71875}
+  m_LocalPosition: {x: -500.69678, y: -189.24751, z: 9.71875}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1621960944}
@@ -29107,8 +29133,8 @@ Transform:
   - {fileID: 150848937}
   - {fileID: 2038949092}
   - {fileID: 988915593}
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 446015017}
+  m_RootOrder: 7
 --- !u!4 &2022224689 stripped
 Transform:
   m_PrefabParentObject: {fileID: 411068, guid: 0774f292dfe1c4e40ab3555656cef9ba, type: 2}

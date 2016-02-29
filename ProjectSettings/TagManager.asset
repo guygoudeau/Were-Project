@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Statue
+  - Barrier
+  - Tree
+  - gui
+  - npc gui
   layers:
   - Default
   - TransparentFX

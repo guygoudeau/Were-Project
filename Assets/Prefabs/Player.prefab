@@ -30,7 +30,6 @@ GameObject:
   - 20: {fileID: 2031960}
   - 92: {fileID: 9225516}
   - 124: {fileID: 12445710}
-  - 81: {fileID: 8132786}
   - 114: {fileID: 11455540}
   - 114: {fileID: 11496654}
   m_Layer: 0
@@ -130,13 +129,6 @@ BoxCollider2D:
   m_Offset: {x: 0, y: -0}
   serializedVersion: 2
   m_Size: {x: 0.6, y: 1.35}
---- !u!81 &8132786
-AudioListener:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 192848}
-  m_Enabled: 1
 --- !u!92 &9225516
 Behaviour:
   m_ObjectHideFlags: 1
@@ -176,7 +168,6 @@ MonoBehaviour:
   speed: 10
   infoHold: {fileID: 132960, guid: 29c59f1209e00014ea85e20b30ef8431, type: 2}
   mainCanvas: {fileID: 22345456, guid: 46ea21aaec6a3974d895d083715b821b, type: 2}
-  pausedCanvas: {fileID: 0}
   spawnPoints:
   - {fileID: 0}
   - {fileID: 0}
@@ -267,6 +258,10 @@ Prefab:
       value: 
       objectReference: {fileID: 22345456, guid: 46ea21aaec6a3974d895d083715b821b,
         type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 188518}

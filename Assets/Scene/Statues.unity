@@ -1622,7 +1622,6 @@ MonoBehaviour:
   - {fileID: 1164139011}
   speed: 2
   moveRate: 4
-  villagerText: {fileID: 0}
   villSay: I think there's a certain order to these. Just touch them and see if they
     activate. I also heard that those who navigae twists and turns can find the answer
     to the statue's question.
@@ -5203,6 +5202,10 @@ Prefab:
     - target: {fileID: 11472712, guid: b15466208e687dd4480ba84b1d1ad05f, type: 2}
       propertyPath: lines.Array.size
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11472712, guid: b15466208e687dd4480ba84b1d1ad05f, type: 2}
+      propertyPath: spawnPoints.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 483306, guid: b15466208e687dd4480ba84b1d1ad05f, type: 2}
       propertyPath: m_LocalPosition.x

@@ -39,13 +39,11 @@ public class InputHandler : MonoBehaviour
         {
             if (!UIRoot.instance.paused)
             {
-                Debug.Log("pause game...");
                 UIRoot.instance.Pause();
                 
             }
             else if (UIRoot.instance.paused)
             {
-                Debug.Log("unpause game....");
                 UIRoot.instance.UnPause();
                 
             }

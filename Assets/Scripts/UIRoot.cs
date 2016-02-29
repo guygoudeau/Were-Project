@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class UIRoot : MonoBehaviour
 {
-    
-    
+    public GameObject infoHolder;
     public List<GameObject> _menus = new List<GameObject>();
     public bool paused;
     private static UIRoot _instance;
@@ -60,9 +59,7 @@ public class UIRoot : MonoBehaviour
     public void EnableMenu(string name)
     {
         DisableMenus();
-        Debug.Log("SET ACTIVE " + name);
         GameObject menu = _menus.Find(x => x.name == name);
-        Debug.Log("Enable " + menu.name);
         menu.SetActive(true);
     }
 
@@ -72,22 +69,27 @@ public class UIRoot : MonoBehaviour
         menu.SetActive(false);
     }
 
-
-
-
     public void LoadOn(string level)
     {
         SceneManager.LoadScene(level);
+        DisableMenus();
+        UnPause();
+        EnableMenu("HUD Canvas");
         if (GameObject.Find("InformationHolder(Clone)") != null)
         {
             GameObject.Find("InformationHolder(Clone)").GetComponent<InfoHandler>().timer = 0;
+            GameObject.Find("InformationHolder(Clone)").GetComponent<InfoHandler>().currentTime = GameObject.Find("InformationHolder(Clone)").GetComponent<InfoHandler>().maxTime;
             GameObject.Find("InformationHolder(Clone)").GetComponent<InfoHandler>().win = false;
             for (int i = 0; i < 3; i++)
             {
                 GameObject.Find("InformationHolder(Clone)").GetComponent<InfoHandler>().req[i] = false;
             }
         }
-        DisableMenus();
+
+        else
+        {
+            Instantiate(infoHolder);
+        }  
     }
 
     private void DisableMenus()
@@ -111,10 +113,14 @@ public class UIRoot : MonoBehaviour
         EnableMenu("Main Canvas");
     }
 
-public void UnPause()
+    public void UnPause()
     {
         paused = false;
         Time.timeScale = 1;
-        DisableMenus();
+        DisableMenu("NPC Canvas");
+        DisableMenu("Main Canvas");
+        DisableMenu("Options Canvas");
+        DisableMenu("Instructions Canvas");
+        EnableMenu("HUD Canvas");
     }
 }

@@ -242,7 +242,6 @@ GameObject:
   - 20: {fileID: 61181249}
   - 92: {fileID: 61181248}
   - 124: {fileID: 61181247}
-  - 81: {fileID: 61181246}
   - 114: {fileID: 61181245}
   - 82: {fileID: 61181250}
   m_Layer: 0
@@ -282,14 +281,6 @@ MonoBehaviour:
   minX: 1.636577
   maxY: 51.83
   minY: 7.26
---- !u!81 &61181246
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 8132786, guid: b15466208e687dd4480ba84b1d1ad05f,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 61181243}
-  m_Enabled: 1
 --- !u!124 &61181247
 Behaviour:
   m_ObjectHideFlags: 0
@@ -617,7 +608,6 @@ Transform:
   m_GameObject: {fileID: 94520495}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.943723, y: 28.7, z: 9.703125}
-  m_LocalPosition: {x: 10.943723, y: 28, z: 9.703125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1938,7 +1928,6 @@ MonoBehaviour:
   speed: 10
   infoHold: {fileID: 132960, guid: 29c59f1209e00014ea85e20b30ef8431, type: 2}
   mainCanvas: {fileID: 22345456, guid: 46ea21aaec6a3974d895d083715b821b, type: 2}
-  pausedCanvas: {fileID: 0}
   spawnPoints: []
   holding: 0
 --- !u!61 &724765003
@@ -2840,7 +2829,6 @@ MonoBehaviour:
   - {fileID: 626515007}
   speed: 2
   moveRate: 10
-  villagerText: {fileID: 0}
   villSay: 'Hey, can you help me get my stuff across? I''ll pay you but all I have
     left is garlic. Just bring the items across and remeber this: don''t leave the
     fox and goose alone and don''t leave the goose and the beans alone.'

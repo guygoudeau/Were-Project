@@ -24,31 +24,13 @@ public class PlayerMovement : MonoBehaviour {
     {
         playRB = GetComponent<Rigidbody2D>();//Gets Player's RigidBody
 
-        //if (GameObject.Find("InformationHolder(Clone)") == null)
-        //{
-        //    Instantiate(infoHold);
-        //}
-
-        //if (GameObject.Find("MainCanvas(Clone)") == null)
-        //{
-        //    Instantiate(mainCanvas);
-        //}
-
-        //if (GameObject.Find("PausedCanvas(Clone)") == null)
-        //{
-        //    Instantiate(pausedCanvas);
-            
-        //}
-
-        //infoHold = GameObject.Find("InformationHolder(Clone)");        
-
-        //for(int fin = 0; fin < spawnPoints.Length; fin++)
-        //{
-        //    if(infoHold.GetComponent<InfoHandler>().lastLevel == spawnPoints[fin].name)
-        //    {
-        //        gameObject.transform.position = spawnPoints[fin].transform.position;
-        //    }   
-        //}   
+        for (int fin = 0; fin < spawnPoints.Length; fin++)
+        {
+            if (infoHold.GetComponent<InfoHandler>().lastLevel == spawnPoints[fin].name)
+            {
+                gameObject.transform.position = spawnPoints[fin].transform.position;
+            }
+        }
     }
 
 	void Update () {

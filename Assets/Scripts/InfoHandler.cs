@@ -32,20 +32,14 @@ public class InfoHandler : MonoBehaviour {
 
     void Start()
     {
-        print("Info Handler Start");
         timerText = GameObject.Find("TimeText").GetComponent<Text>();
-        //pas = GameObject.Find("Paused Canvas");
-        //pas.SetActive(false);
     }
 
 
     void FixedUpdate()
     {
-        ///Actual Code
-        /// 
-        if(win == false)
+        if(win == false)    //If the game is being played
         {
-            timerText = GameObject.Find("TimeText").GetComponent<Text>();
             timer += Time.deltaTime;
             currentTime = maxTime - timer;
 
@@ -60,32 +54,5 @@ public class InfoHandler : MonoBehaviour {
                 SceneManager.LoadScene("Menu");
             }
         }
-
-        //Test Code. trying to find out how long it takes to complete.        
-        //if(win == false)
-        //{
-        //    timer += Time.deltaTime;
-
-        //    int minutes = Mathf.FloorToInt(timer / 60F);
-        //    int seconds = Mathf.FloorToInt(timer - minutes * 60);
-        //    string niceTime = string.Format("{0:0}:{1:00}", minutes, seconds);
-
-        //    timerText.text = niceTime;
-        //}
     }
-
-    //bool togglePause()
-    //{
-    //    if (Time.timeScale == 0f)
-    //    {
-    //        Time.timeScale = 1f;
-    //        return false;
-    //    }
-
-    //    else
-    //    {
-    //        Time.timeScale = 0f;
-    //        return true;
-    //    }
-    //}
 }

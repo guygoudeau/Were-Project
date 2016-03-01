@@ -51,7 +51,7 @@ public class InfoHandler : MonoBehaviour {
 
             if (currentTime <= 0f)
             {
-                SceneManager.LoadScene("Menu");
+                SceneManager.LoadScene("PreLose");
             }
         }
     }

@@ -17242,7 +17242,7 @@ MonoBehaviour:
   - {fileID: 969514746}
   - {fileID: 2074438334}
   speed: 2
-  moveRate: 10
+  moveRate: 7
   villSay: Hello friend. You are looking pale. You should go to Madam Lovely North
     of the town. She's a little.. disturbing, but she can cure you.
   speach: 0

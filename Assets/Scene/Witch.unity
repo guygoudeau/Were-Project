@@ -4606,6 +4606,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11472712, guid: b15466208e687dd4480ba84b1d1ad05f, type: 2}
+      propertyPath: spawnPoints.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 483306, guid: b15466208e687dd4480ba84b1d1ad05f, type: 2}
       propertyPath: m_LocalPosition.x
       value: 29.25
@@ -5353,8 +5357,6 @@ GameObject:
   - 4: {fileID: 2090383539}
   - 212: {fileID: 2090383543}
   - 61: {fileID: 2090383542}
-  - 50: {fileID: 2090383541}
-  - 114: {fileID: 2090383540}
   - 114: {fileID: 2090383544}
   m_Layer: 0
   m_Name: Witch
@@ -5375,45 +5377,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1254401827}
   m_RootOrder: 0
---- !u!114 &2090383540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11427530, guid: 39f6e4d238c0b9b4e8f96d69ef9d8cf0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2090383538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9166d717d25eea4aa4a9a8c7b602d29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  patrolPoints:
-  - {fileID: 875836341}
-  speed: 2
-  moveRate: 13
-  villagerText: {fileID: 0}
-  villSay: You, you have been cursed. Madam Lovely can cure you, but she needs items.
-    She needs Garlic, Quartz, and Dragon's Blood. Go, beyond the village for these
-    items.
-  speach: 0
---- !u!50 &2090383541
-Rigidbody2D:
-  serializedVersion: 2
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 5019802, guid: 39f6e4d238c0b9b4e8f96d69ef9d8cf0,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2090383538}
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 3
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!61 &2090383542
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5471,6 +5434,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5e770e47cc5dcd4aaf3ccf558a7567d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveRate: 7
+  villSay: You, you have been cursed. Madam Lovely can cure you, but she needs items.
+    She needs Garlic, Quartz, and Dragon's Blood. Go, beyond the village for these
+    items.
+  speach: 0
 --- !u!1001 &2095287542
 Prefab:
   m_ObjectHideFlags: 0

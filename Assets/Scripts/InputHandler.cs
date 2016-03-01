@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class InputHandler : MonoBehaviour
-{
-    
+{  
     private static InputHandler _instance;
     public static InputHandler instance;
     void Awake()
@@ -26,7 +26,6 @@ public class InputHandler : MonoBehaviour
                 /*
                     If the same object does exist it will destroy the current instance of that object
                 */
-                print("found another instance of ID: " + gameObject.GetInstanceID() + ". Destroying.");
                 Destroy(this.gameObject);
             }
         }
@@ -46,6 +45,29 @@ public class InputHandler : MonoBehaviour
             {
                 UIRoot.instance.UnPause();
                 
+            }
+        }
+
+        else if (Input.GetKeyDown(KeyCode.F1))
+        {
+            SceneManager.LoadScene("Statues");
+        }
+
+        else if (Input.GetKeyDown(KeyCode.F2))
+        {
+            SceneManager.LoadScene("Farmer");
+        }
+
+        else if (Input.GetKeyDown(KeyCode.F3))
+        {
+            SceneManager.LoadScene("HedgeMaze");
+        }
+
+        else if (Input.GetKeyDown(KeyCode.F4))
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                GameObject.Find("InformationHolder(Clone)").GetComponent<InfoHandler>().req[i] = true;
             }
         }
     }

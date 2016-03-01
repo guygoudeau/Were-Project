@@ -42,7 +42,7 @@ public class UIRoot : MonoBehaviour
                 /*
                     If the same object does exist it will destroy the current instance of that object
                 */
-                print("found another instance of ID: " + gameObject.GetInstanceID() + ". Destroying.");
+
                 Destroy(this.gameObject);
             }
         }
@@ -51,14 +51,12 @@ public class UIRoot : MonoBehaviour
 
     public void NPCText(string txt)
     {
-
         GameObject npcMenu = _menus.Find(x => x.name == "NPC Canvas");
         npcMenu.GetComponentInChildren<Text>().text = txt;
         
     }
     public void EnableMenu(string name)
     {
-        DisableMenus();
         GameObject menu = _menus.Find(x => x.name == name);
         menu.SetActive(true);
     }

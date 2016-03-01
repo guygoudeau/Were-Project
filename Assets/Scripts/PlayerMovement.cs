@@ -2,8 +2,6 @@
 using System.IO;
 using UnityEngine;
 using System.Collections;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour {
 
@@ -23,12 +21,13 @@ public class PlayerMovement : MonoBehaviour {
     void Start()
     {
         playRB = GetComponent<Rigidbody2D>();//Gets Player's RigidBody
+        infoHold = GameObject.Find("InformationHolder(Clone)");
 
         for (int fin = 0; fin < spawnPoints.Length; fin++)
         {
             if (infoHold.GetComponent<InfoHandler>().lastLevel == spawnPoints[fin].name)
             {
-                gameObject.transform.position = spawnPoints[fin].transform.position;
+                this.gameObject.transform.position = spawnPoints[fin].transform.position;
             }
         }
     }

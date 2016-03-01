@@ -48,22 +48,22 @@ public class InputHandler : MonoBehaviour
             }
         }
 
-        else if (Input.GetKeyDown(KeyCode.F1))
+        else if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             SceneManager.LoadScene("Statues");
         }
 
-        else if (Input.GetKeyDown(KeyCode.F2))
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             SceneManager.LoadScene("Farmer");
         }
 
-        else if (Input.GetKeyDown(KeyCode.F3))
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             SceneManager.LoadScene("HedgeMaze");
         }
 
-        else if (Input.GetKeyDown(KeyCode.F4))
+        else if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             for (int i = 0; i < 3; i++)
             {

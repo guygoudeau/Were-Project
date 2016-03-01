@@ -87,7 +87,9 @@ public class UIRoot : MonoBehaviour
         else
         {
             Instantiate(infoHolder);
-        }  
+        }
+
+        GameObject.Find("InformationHolder(Clone)").GetComponent<InfoHandler>().lastLevel = "";
     }
 
     private void DisableMenus()
